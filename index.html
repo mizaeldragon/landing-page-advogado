@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/output.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Landing Page</title>
+  </head>
+  <body>
+    <header
+      id="header"
+      class="bg-zinc-950 w-full h-screen md:h-[800px] lg:h-[800px] border-b-4 border-blue-700"
+    >
+      <div
+        id="menu"
+        class="text-white bg-blue-700 w-full h-[70px] items-center justify-evenly fixed z-50 hidden lg:flex space-x-4"
+      >
+        <h1 class="font-bold">JULIO CESAR</h1>
+        <nav>
+          <ul class="font-bold">
+            <a class="mr-10" href="#">Home</a>
+            <a class="mr-10" href="#servico">Serviços</a>
+            <a class="mr-10" href="#sobre">Sobre</a>
+            <a class="mr-10" href="#diferenciais">Diferenciais</a>
+            <a href="#contatos">Contatos</a>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="overlay-menu"></div>
+
+      <!-- MENU MOBILE  -->
+      <div id="menu-mobile" class="menu-mobile">
+        <div id="btn-fechar" class="btn-fechar">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA6ElEQVR4nO3WTQrCMBCG4WzEY2j9w7OKIHgDxdad3ej1fCXaQqi0nUw76CLfemZ4MiQQ51JSUkYOMAOyAf2ZnzEUsQeefHICJhG9E+Bc9foZOy1iHiDq3CSYCuFrwzxVmwFWjUEiTAuiziIa4gPkMZgexMVpQ/fgBzBt1JYttfew1gyDNUKIKTsQoss9JsZ2EwMwdogIjD3Cp+difr2mXyHsMcgRdhj+4fnSjXhfTEmNOcIpajWQa8zKezCFFrGNQQgxGw1kGYsQYNT/kWMwJFd8FYug/6BC1PGnANZOGd+r3kRKSoprzwvFYEukR4CSKgAAAABJRU5ErkJggg=="
+          />
+        </div>
+
+        <nav class="nav-mobile text-white">
+          <a href="#">Home</a>
+          <a href="#servico">Serviços</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#diferenciais">Diferenciais</a>
+          <a href="#contatos">Contatos</a>
+        </nav>
+      </div>
+      <!--FIM MENU MOBILE  -->
+
+      <button id="btn-open" class="btn-open lg:hidden">
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAd0lEQVR4nO3VsQ2AIBBAUUqxZTPQFVxUBmAB19Dym2sJBYkeNPcS6h8OknPOGG2ABxJwKJ0kjVY4oy/X0cA4YcaNz9aoFyAqvnGUhsL3NJ2AHSjApXSKNOroCjwDfvUtrVlhP2PUW+/Tm/9ha1FPqEdta9EY98ULvq12Dhhog3IAAAAASUVORK5CYII="
+        />
+      </button>
+
+      <div
+        class="flex flex-col justify-center items-center lg:flex-row lg:pt-36 md:pt-24"
+      >
+        <div
+          class="sm:size-72 lg:w-[850px] lg:h-[500px] lg:mt-16 flex items-center justify-center"
+        >
+          <img
+            class="lg:w-[700px] lg:h-[600px] sm:size-72"
+            src="./assets/p-1.png"
+            alt="foto-pessoa"
+          />
+        </div>
+
+        <div class="flex flex-col justify-center items-center">
+          <div class="z-10 text-white">
+            <h1 class="font-bold text-4xl text-center -mt-8 select-none">
+              Advogado especialista em Direito Previdenciário e de Família
+            </h1>
+            <p class="text-center mt-2 select-none font-bold">
+              Qualidade no atendimento, de forma ágil e humanizada.
+            </p>
+          </div>
+
+          <button
+            class="bg-blue-500 rounded-full border-none w-[90%] h-[70px] mt-8 font-bold text-white hover:bg-blue-700 hover:scale-105 transition-all duration-500 flex justify-center items-center gap-8 lg:w-[500px]"
+          >
+            <i class="fa-brands fa-whatsapp fa-2xl" style="color: #ffffff"></i
+            >Clique aqui e fale comigo
+          </button>
+        </div>
+      </div>
+    </header>
+    <main
+      id="servico"
+      class="w-full min-h-screen grid bg-zinc-950 text-white border-b-4 border-blue-700"
+    >
+      <div class="text-center">
+        <h2 class="text-4xl mt-10 lg:mt-24 font-bold">
+          Veja como poderei te ajudar
+        </h2>
+        <p class="text-lg font-medium mt-8">ÁREAS DE ATUAÇÃO DO ESCRITÓRIO</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 place-items-center">
+        <div
+          class="flex flex-col items-center justify-center w-[90%] h-[350px] bg-zinc-100 border-1 mt-12 rounded-lg shadow-black shadow-lg text-black hover:scale-105 transition-all duration-500"
+        >
+          <img
+            class="size-20 mb-4"
+            src="./assets/dfamiliar.png"
+            alt="direito familiar logo"
+          />
+          <h1 class="font-bold mb-6 text-2xl text-blue-800">
+            Direito De Família
+          </h1>
+          <div class="text-center font-semibold">
+            <p>Divórcio Amigável,</p>
+            <p>Divórcio litigioso,</p>
+            <p>Pensão alimentícia,</p>
+            <p>Investigação de paternidade,</p>
+            <p>Revisão de pensão,</p>
+            <p>Acordo pré-nupcial,</p>
+            <p>Entre outros.</p>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col items-center justify-center w-[90%] h-[350px] bg-zinc-100 border-1 mt-12 rounded-lg shadow-black shadow-lg text-black hover:scale-105 transition-all duration-500"
+        >
+          <img
+            class="size-20 mb-4"
+            src="./assets/aposent.png"
+            alt="direito familiar logo"
+          />
+          <h1 class="font-bold mb-6 text-2xl text-blue-800">Aposentadorias</h1>
+          <div class="text-center font-semibold">
+            <p>Aposentadoria por Idade;</p>
+            <p>Aposentadoria por tempo de Contribuição;</p>
+            <p>Aposentadoria do Professor;</p>
+            <p>Aposentadoria da Pessoa com Deficiência;</p>
+            <p>Aposentadoria por Incapacidade Permanente (Invalidez);</p>
+            <p>Aposentadoria Especial.</p>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col items-center justify-center w-[90%] h-[350px] bg-zinc-100 border-1 mt-12 rounded-lg shadow-black shadow-lg text-black hover:scale-105 transition-all duration-500"
+        >
+          <img
+            class="size-20 mb-4"
+            src="./assets/beneficio.png"
+            alt="direito familiar logo"
+          />
+          <h1 class="font-bold mb-6 text-2xl text-blue-800">
+            Auxílios e Benefícios
+          </h1>
+          <div class="text-center font-semibold">
+            <p>Auxílio por Incapacidade Temporária (Auxílio Doença);</p>
+            <p>Auxílio Acidente;</p>
+            <p>Auxílio Reclusão;</p>
+            <p>Salário Maternidade;</p>
+            <p>Pensão por Morte</p>
+            <p>BPC/LOAS.</p>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col items-center justify-center w-[90%] h-[350px] bg-zinc-100 border-1 mt-12 rounded-lg shadow-black shadow-lg text-black hover:scale-105 transition-all duration-500"
+        >
+          <img
+            class="size-20 mb-4"
+            src="./assets/oservicos.png"
+            alt="direito familiar logo"
+          />
+          <h1 class="font-bold mb-6 text-2xl text-blue-800">Outros Serviços</h1>
+          <div class="text-center font-semibold">
+            <p>Planejamento Previdenciário;</p>
+            <p>Acompanhamento e atuação em processos junto ao INSS;</p>
+            <p>Acompanhamento e atuação em processos judiciais;</p>
+            <p>Recursos administrativos.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-center items-center">
+        <button
+          class="bg-blue-500 rounded-full border-none w-[90%] h-[70px] mt-12 mb-16 font-bold text-white hover:bg-blue-700 hover:scale-105 transition-all duration-500 flex justify-center items-center gap-8 lg:w-[500px]"
+        >
+          <i class="fa-brands fa-whatsapp fa-2xl" style="color: #ffffff"></i
+          >Clique aqui e fale comigo
+        </button>
+      </div>
+    </main>
+
+    <section
+      id="sobre"
+      class="w-full min-h-screen bg-zinc-950 text-white flex flex-col justify-center items-center border-b-4 border-blue-700"
+    >
+      <div class="mt-10 text-center">
+        <h1 class="text-4xl font-bold">
+          Quem irá trabalhar <br />ao seu favor
+        </h1>
+        <p class="font-semibold mt-6">CONHEÇA O ADVOGADO</p>
+      </div>
+
+      <div
+        class="flex items-center justify-center w-[90%] h-[350px] lg:w-[600px] lg:h-[450px] bg-zinc-100 border-1 mt-12 rounded-lg shadow-black shadow-lg text-black hover:scale-105 transition-all duration-500"
+      >
+        <img
+          class="size-80 lg:size-96 mb-4 mr-4"
+          src="./assets/p-1.png"
+          alt="direito familiar logo"
+        />
+      </div>
+
+      <h2 class="mt-8 font-bold text-4xl text-center">Julio Cesar</h2>
+      <p class="text-center font-semibold mt-6 text-2xl">
+        Sou advogado, Há 10 anos atuo na resolução de conflitos jurídicos,<br />
+        atualmente estou trabalhando mais com causas da áreas de direito de
+        família e previdenciário.
+      </p>
+
+      <button
+        class="bg-blue-500 rounded-full border-none w-[90%] h-[70px] mt-24 mb-16 font-bold text-white hover:bg-blue-700 hover:scale-105 transition-all duration-500 flex justify-center items-center gap-8 lg:w-[500px]"
+      >
+        <i class="fa-brands fa-whatsapp fa-2xl" style="color: #ffffff"></i
+        >Clique aqui e fale comigo
+      </button>
+    </section>
+
+    <section
+      id="diferenciais"
+      class="w-full min-h-screen bg-zinc-950 text-white justify-center items-center grid border-b-4 border-blue-700"
+    >
+      <div class="text-center mt-12">
+        <h1 class="text-4xl font-bold px-4">
+          Por que escolher nosso escritório?
+        </h1>
+        <p class="font-semibold mt-6">NOSSOS DIFERENCIAIS</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 place-items-center">
+        <div
+          class="flex flex-col items-center justify-center w-[90%] h-[250px] bg-zinc-100 border-1 mt-12 rounded-lg shadow-black shadow-lg text-black hover:scale-105 transition-all duration-500"
+        >
+          <img
+            class="size-12 mb-4"
+            src="./assets/icon-what.png"
+            alt="direito familiar logo"
+          />
+          <h1 class="font-bold mb-6 text-2xl text-blue-800">Contato</h1>
+          <div class="text-center font-semibold px-4">
+            <p class="text-center">
+              Entre em contato comigo através do WhatsApp tocando em um dos
+              botões disponíveis no site.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col items-center justify-center w-[90%] h-[250px] bg-zinc-100 border-1 mt-12 rounded-lg shadow-black shadow-lg text-black hover:scale-105 transition-all duration-500"
+        >
+          <img
+            class="size-12 mb-4"
+            src="./assets/agil.png"
+            alt="direito familiar logo"
+          />
+          <h1 class="font-bold mb-6 text-2xl text-blue-800">
+            Atendimento Ágil
+          </h1>
+          <div class="text-center font-semibold px-4">
+            <p class="text-center">
+              Estarei totalmente pronta para te atender e começar a discutir o
+              seu caso elaborando uma estratégia.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col items-center justify-center w-[90%] h-[250px] bg-zinc-100 border-1 mt-12 rounded-lg shadow-black shadow-lg text-black hover:scale-105 transition-all duration-500"
+        >
+          <img
+            class="size-12 mb-4"
+            src="./assets/transparencia.png"
+            alt="direito familiar logo"
+          />
+          <h1 class="font-bold mb-6 text-2xl text-blue-800">Transparência</h1>
+          <div class="text-center font-semibold px-4">
+            <p class="text-center">
+              Seu caso será acompanhado e devidamente esclarecido a você com
+              total transparência e responsabilidade.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col items-center justify-center w-[90%] h-[250px] bg-zinc-100 border-1 mt-12 rounded-lg shadow-black shadow-lg text-black hover:scale-105 transition-all duration-500"
+        >
+          <img
+            class="size-12 mb-4"
+            src="./assets/etica.png"
+            alt="direito familiar logo"
+          />
+          <h1 class="font-bold mb-6 text-2xl text-blue-800">
+            Ética Profissional
+          </h1>
+          <div class="text-center font-semibold px-4">
+            <p class="text-center">
+              Todos as suas informações, documentações e particularidades serão
+              tratadas com total sigilo e ética por parte do escritório.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-center items-center">
+        <button
+          class="bg-blue-500 rounded-full border-none w-[90%] h-[70px] mt-12 mb-16 font-bold text-white hover:bg-blue-700 hover:scale-105 transition-all duration-500 flex justify-center items-center gap-8 lg:w-[500px]"
+        >
+          <i class="fa-brands fa-whatsapp fa-2xl" style="color: #ffffff"></i
+          >QUERO APOIO JURÍDICO
+        </button>
+      </div>
+    </section>
+
+    <section
+      id="contatos"
+      class="w-full h-[300px] bg-zinc-950 text-blue-500 flex justify-center items-center flex-col"
+    >
+      <div class="text-4xl font-bold mb-14">
+        <h1>CONTATOS</h1>
+      </div>
+
+      <div class="flex items-center gap-7">
+        <a href="">
+          <i
+            class="fa-brands fa-whatsapp fa-2xl hover:scale-125 transition-all duration-500"
+            style="color: #ffffff"
+          ></i>
+        </a>
+
+        <a href="">
+          <i
+            class="fa-brands fa-instagram fa-2xl hover:scale-125 transition-all duration-500"
+            style="color: #ffffff"
+          ></i>
+        </a>
+      </div>
+    </section>
+
+    <footer class="w-full h-20 flex items-center justify-center text-center">
+      <h3 class="font-medium">
+        Copyright 2024. Todos os Direitos Reservados. Julio Cesar – Advocacia.
+      </h3>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

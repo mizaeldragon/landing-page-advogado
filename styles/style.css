@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.menu-mobile {
+  background: black;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: -100vw;
+  width: 70%;
+  font-size: 25px;
+  transition: right 0.2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 200;
+}
+
+.menu-mobile.open {
+  right: 0;
+}
+
+.menu-mobile nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.menu-mobile nav a {
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+/* .menu-mobile nav a:hover {
+  color: #fff;
+  border-bottom: 0.3rem solid #1d4ed8;
+} */
+
+.menu-mobile .btn-fechar {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.btn-open {
+  background: none;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  top: 16px;
+  right: 10px;
+  z-index: 300;
+}
+
+.overlay-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  display: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.overlay-menu.show {
+  display: block;
+  opacity: 1;
+}
+
+a {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+}
+
+a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -5px;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
