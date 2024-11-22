@@ -2882,6 +2882,18 @@ a:hover:before {
     height: 800px;
   }
 
+  .lg\:h-\[400px\] {
+    height: 400px;
+  }
+
+  .lg\:h-\[550px\] {
+    height: 550px;
+  }
+
+  .lg\:h-\[580px\] {
+    height: 580px;
+  }
+
   .lg\:w-\[500px\] {
     width: 500px;
   }
@@ -2890,12 +2902,24 @@ a:hover:before {
     width: 600px;
   }
 
-  .lg\:w-\[700px\] {
-    width: 700px;
+  .lg\:w-\[800px\] {
+    width: 800px;
   }
 
   .lg\:w-\[850px\] {
     width: 850px;
+  }
+
+  .lg\:w-\[700px\] {
+    width: 700px;
+  }
+
+  .lg\:w-\[750px\] {
+    width: 750px;
+  }
+
+  .lg\:w-\[650px\] {
+    width: 650px;
   }
 
   .lg\:grid-cols-2 {
@@ -2908,6 +2932,20 @@ a:hover:before {
 
   .lg\:pt-36 {
     padding-top: 9rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:h-\[580px\] {
+    height: 580px;
+  }
+
+  .\32xl\:w-\[300px\] {
+    width: 300px;
+  }
+
+  .\32xl\:w-\[650px\] {
+    width: 650px;
   }
 }
 
