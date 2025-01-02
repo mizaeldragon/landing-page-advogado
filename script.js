@@ -5,6 +5,42 @@ const btnOpen = document.getElementById("btn-open");
 const menuLinks = document.querySelectorAll(".menu-mobile nav a");
 const overlayMenu = document.querySelector(".overlay-menu");
 
+ScrollReveal().reveal("#items-header", {
+  origin: "left",
+  duration: 2000,
+  distance: "20%",
+});
+
+ScrollReveal().reveal("#items-main", {
+  origin: "left",
+  duration: 2000,
+  distance: "20%",
+});
+
+ScrollReveal().reveal("#items-sobre", {
+  origin: "left",
+  duration: 2000,
+  distance: "20%",
+});
+
+ScrollReveal().reveal("#items-diferenciais", {
+  origin: "left",
+  duration: 2000,
+  distance: "20%",
+});
+
+ScrollReveal().reveal("#items-contato", {
+  origin: "left",
+  duration: 2000,
+  distance: "20%",
+});
+
+ScrollReveal().reveal("#items-footer", {
+  origin: "left",
+  duration: 2000,
+  distance: "20%",
+});
+
 // para fechar o menu quando eu clicar no boitao de fechar menu
 btnFechar.addEventListener("click", function () {
   menuMobile.classList.remove("open");
